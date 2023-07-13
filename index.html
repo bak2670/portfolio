@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>About Me</title>
 
     <!-- <meta name="author" content="p">
@@ -15,6 +18,7 @@
 
 
 </head>
+
 <body>
     <div class="protrait"></div>
     <div class="profile">
@@ -22,7 +26,7 @@
         <div class="profile-header">
 
             <div class="name">
-                <!-- I'm a -->저는d
+                <!-- I'm a -->저는
                 <div class="name-job">
                     <ul class="name-job-list">
                         <li>끊임없이 노력하는</li>
@@ -53,20 +57,23 @@
                     <h3>2021</h3>
                     <p>코리아IT아카데미 빅데이터웹전문가양성 수료</p>
                 </li>
-                <!-- <li>
-                    <h3>2012</h3>
-                    <p>asdasdsadsadsadsadsadasdsadsadasd</p>
+                <li>
+                    <h3>2021.11 ~ 2022.08 스타트원</h3>
+                    <ul class="project-name">
+                        <li>한국선급 e-Ship퍼블리싱</li>
+                        <li>기아 SWC 홈페이지 리뉴얼</li>
+                        <li>굿모닝아이텍 홈페이지 리뉴얼</li>
+                        <li>Sk hynix 정보조사시스템 구축</li>
+                    </ul>
                 </li>
                 <li>
-                    <h3>2012</h3>
-                    <p>asdasdsadsadsadsadsadasdsadsadasd</p>
+                    <h3>2021.11 ~ 2022.08 서우엠에스</h3>
+                    <ul class="project-name">
+                        <li>곤충선별프로그램</li>
+                        <li>해충선별프로그램</li>
+                        <li>iFactoryFarm</li>
+                    </ul>
                 </li>
-                <li>
-                    <h3>2012</h3>
-                    <p>asdasdsadsadsadsadsadasdsadsadasdasdasdsad
-                        sadsadsadsadasdsadsadasd
-                        asdasdsadsadsadsadsadasdsadsadasd</p>
-                </li> -->
             </ul>
         </div>
 
@@ -80,17 +87,18 @@
                 <li data-score="90%">
                     <h3>CSS</h3>
                 </li>
+
                 <li data-score="80%">
-                    <h3>JAVA</h3>
+                    <h3>React</h3>
                 </li>
                 <li data-score="70%">
                     <h3>JavaScript</h3>
                 </li>
-                <li data-score="50%">
-                    <h3>Python</h3>
+                <li data-score="60%">
+                    <h3>TypeScript</h3>
                 </li>
                 <li data-score="50%">
-                    <h3>Android</h3>
+                    <h3>JAVA</h3>
                 </li>
                 
             </ul>
@@ -99,22 +107,25 @@
 
         <div class="profile-section">
             <h2>My Project</h2>
-            <div style="overflow: hidden;">
+            <div style="overflow: hidden;" class="slick">
                 <div class ="project-img" onclick="sild()">
                     <div class="project-item">
                         <a href="https://www.youtube.com/watch?v=xMs2n_nZrr8" target="_blank">
                             <img src="./img/zeus.png" alt="번개장터"><a></a>
-                    <p>HTML CSS JavaScript JSP</p></div>
+                        <p>HTML CSS JavaScript JSP</p>
+                </div>
 
                     <div class="project-item">
                         <a href="https://beackanimaldatingtype.netlify.app" target="_blank">
                             <img src="./img/animal.png" alt="번개장터"><a></a>
-                    <p>HTML CSS JavaScript</p></div>
+                    <p>HTML CSS JavaScript</p>
+                    </div>
 
                     <div class="project-item">
                         <a href="https://silly-raman-a73389.netlify.app/" target="_blank">
                             <img src="./img/Tourist.png" alt="번개장터"><a></a>
-                    <p>HTML CSS JavaScript</p></div>
+                    <p>HTML CSS JavaScript</p>
+                </div>
                 </div>
             </div>
             <div class="asdasd">
@@ -127,29 +138,19 @@
             </div>  
         </div>
 
-            <script>
-                    const imglist = [document.querySelector('.project-item1'),document.querySelector('.project-item2'),document.querySelector('.project-item3')];
-                    function right(){
-                        document.querySelector('.project-img').style.transform= asd -=100;
-                    }
-                const asd = 'translate(-100vw)';
+        <section class="slick">
+            <div>
+                <p>123</p>
+                <img src="./img/zeus.png" alt="번개장터">
+                <p>123</p>
 
-                document.querySelector('.btn2').addEventListener('click',function(){
-                    document.querySelector('.project-img').style.transform = 'translate(-100vw)';
-                })
+            </div>
+            <div>
+                <img src="./img/zeus.png" alt="번개장터">
+            </div>
+        </section>
 
-                document.querySelector('.btn3').addEventListener('click',function(){
-                    document.querySelector('.project-img').style.transform = 'translate(-200vw)';
-                })
-                document.querySelector('.btn1').addEventListener('click',function(){
-                    document.querySelector('.project-img').style.transform = 'translate(0vw)';
-                })
 
-                document.querySelector('.btn0').addEventListener('click',function(){
-                    document.querySelector('.project-img').style.transform = 'translate(=- 100vw)';
-                })
-                
-            </script>
             <!-- 1.다음/이전 버튼
             2. 확장성잡기(그림 버튼이 몇개있든 잘 동잗하게 하려면?) -->
             
@@ -166,8 +167,10 @@
                 <dd>www.beack.com</dd>
             </dl>
         </div>
-        <script src="./js/script.js" charset="utf-8"></script>
+
 
     </div>
+
+    <script src="./js/script.js" charset="utf-8"></script>
 </body>
 </html>
