@@ -227,12 +227,9 @@ a{
 }
 
 .project-item{
-
     width: 100vw;
     /* height: 50vw; */
     float: left;
-    
-    
 }
 
 .project-item img {
@@ -240,7 +237,7 @@ a{
     height: 20vw; */
 
     width: 100%;
-    height: 40vw;
+    /* height: 40vw; */
     
 }
 
@@ -283,7 +280,11 @@ a{
     overflow: hidden;
 }
 
-
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -322,18 +323,21 @@ a{
         margin-bottom:-100px;
     } */
 
-    .project-img{
+    /* .project-img{
         width: 300vw;
         
     }
+
     .project-img img{
         width: 30vw;
         height: 20vw;
         
 
-    }
+    } */
 
 
+
+    
 
 
 }
